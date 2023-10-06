@@ -1,0 +1,16 @@
+About
+
+This project contains Superstore sales data for a period of four years. It can be used to analyze the sales performance of the company, i.e., revenue and profit margins. In addition to this, another task of this project is to investigate negative profit margins. The original dataset was sourced from Kaggle.
+
+Data cleaning
+
+The raw dataset was clean except for the Order_ID column. The first two letter in the Order_ID column is a country code, i.e., "CA" for Canada and "US" for USA. However, in the dataset, both the States and Country columns belongs to the United States only. So, all the entries with "CA" in the Order_ID were replaced with "US". 
+
+Queries 
+
+To answer the business questions for e.g., related to sales, profits, losses, etc. SQL queries were writtten in BigQuery. Since, there were multiple questions to answer, queries related to them were put in a single script by using temporary tables. This, way, later on it is easy to save queries related to individual questions as a csv file for visualizations. One of the key findings of this project was that for some of the the products in the Sub Category, the profit margins were negative. As into further investigation, it was observed that the primary reason for this was high discount rates relative to the actual product price. In terms of total sales, these products were less popular amongst the customers. Maybe, the company wanted to introduce these products to the inventory but when there saw less sales, they decided to introduce discounts. One reason could be to get rid of the old stock. 
+
+Data visualization
+
+All the csv files generated from the queries were uploaded to the Tableau Public for visualizations. 
+
